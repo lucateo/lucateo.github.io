@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<title>Teodori Luca</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style_new.css"> <!-- Indicate the css file to use to change styles of body, paragraph etc. -->
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+</style>
+<body>
+ <!-- Navbar, all the w3 things come from the css example I am using --> 
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="il_teodori.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Il Teodori</a>
+    <a href="https://lucateo.blogspot.it/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Blog</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+  </div>
+ <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="il_teodori.html" class="w3-bar-item w3-button w3-padding-large">Il Teodori</a>
+    <a href="https://lucateo.blogspot.it/" class="w3-bar-item w3-button w3-padding-large">Blog</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  </div>
+</div>
+<!-- Header -->
+<header class="w3-container w3-blue-gray w3-center" style="padding:128px 16px" >
+  <h1 class="w3-margin w3-jumbo">Teodori Luca</h1>  <!--style="background-image:url('images/bigBang.jpg')" to put a background image but it doesn't work! -->
+  <p class="w3-xlarge">A physicist student webpage</p>
+ </header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Greetings</h1>
+      <h5 class="w3-padding-32">Hi! I'm Luca Teodori, a physics student now attending the graduate physics course on the University of Padova. 
+					This is my first website, where I will put some notes and other things I made or other things I find interesting.</h5>
+
+					<h1> Notes on linear algebra </h1>
+					<h5 class="w3-padding-32"><a href="files/tutorato.pdf">Here </a> you can find the notes on linear algebra and geometry I have written in italian for my activity as 
+					a tutor on Collegio Alessandro Volta. </h5>
+				
+				
+				
+				<h1>Bachelor thesis </h1>
+				<h5 class="w3-padding-32"> You can find <a href="files/tesi.pdf">here </a>the pdf of my thesis for the bachelor degree in physics at the university of Pavia,
+				regarding "A common framework for entropy in thermodynamics and quantum information theory".  </h5>
+				
+				
+				
+				<h1> Laboratory 3 reports </h1>
+				<h5 class="w3-padding-32"> I put <a href="files/relazioniLab3.pdf">here </a>the reports I have written in latex for the laboratory 3 exam, held at Pavia university.</h5>
+				
+				
+				
+				<h1> Structure of matter formulary </h1>
+				<h5 class="w3-padding-32"> I put <a href="files/formulario_struttura.pdf">here </a> a brief formulary on structure of matter, that I find useful in order to sustain the written 
+				part of the exam. </h5>
+				
+         </div>
+<aside>  <!-- the aside menu, layout taken from robe mie on css style -->
+<section>
+<h2>Links</h2>
+					<a href="files/tutorato.pdf">Notes on linear algebra</a>
+					<a href="files/tesi.pdf">Thesis</a>
+					<a href="files/relazioniLab3.pdf">Lab 3 reports</a>
+					<a href="files/formulario_struttura.pdf">Structure of matter formulary </a>
+</section>
+</aside>
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">"There are naive questions, tedious questions, ill-phrased questions, 
+    questions put after inadequate self-criticism. But every question is a cry to understand the world. 
+    There is no such thing as a dumb question" <i>Carl Sagan</i> </h1>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+<?php include 'menu.php';?>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+   <p>Luca Teodori<br /> <!-- line break -->
+		Urbino, Italy <br />
+		email: luca95teo@gmail.com	
+	</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

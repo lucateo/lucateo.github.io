@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<title>Teodori Luca</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style_new.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+</style>
+<body>
+ <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="il_teodori.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Il Teodori</a>
+    <a href="https://lucateo.blogspot.it/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Blog</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-white">Contact</a>
+  </div>
+ <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="il_teodori.html" class="w3-bar-item w3-button w3-padding-large">Il Teodori</a>
+    <a href="https://lucateo.blogspot.it/" class="w3-bar-item w3-button w3-padding-large">Blog</a>
+    <a href="contact.html" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">Contact</a>
+  </div>
+</div>
+<!-- Header -->
+<header class="w3-container w3-blue-gray w3-center" style="padding:128px 16px" >
+  <h1 class="w3-margin w3-jumbo">Teodori Luca</h1>
+  <p class="w3-xlarge">A physicist student webpage</p>
+ </header>
+
+<!-- start of the particular things of the page -->
+
+
+			<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+			<h2>How to contact me</h2>
+			<p>You can find me on the most important social network like facebook or twitter (also in google+ even if it is 
+			not so popular) but if you want to contact me I write here my email adress: luca95teo@gmail.com (I know there is 
+			already written in all the pages of this website but I wanted to make another page so here it is).</p>
+			
+			           </div> 
+
+			
+<!-- end of the particular things of the page -->
+<aside>  <!-- the aside menu, layout taken from robe mie on css style -->
+<section>
+<h2>Links</h2>
+					<a href="files/tutorato.pdf">Notes on linear algebra</a>
+					<a href="files/tesi.pdf">Thesis</a>
+					<a href="files/relazioniLab3.pdf">Lab 3 reports</a>
+					<a href="files/formulario_struttura.pdf">Structure of matter formulary </a>
+</section>
+</aside>
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">"There are naive questions, tedious questions, ill-phrased questions, 
+    questions put after inadequate self-criticism. But every question is a cry to understand the world. 
+    There is no such thing as a dumb question" <i>Carl Sagan</i> </h1>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+<?php include 'menu.php';?>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+   <p>Luca Teodori<br /> <!-- line break -->
+		Urbino, Italy <br />
+		email: luca95teo@gmail.com	
+	</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
