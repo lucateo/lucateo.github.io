@@ -1,6 +1,10 @@
 
 <!DOCTYPE html>
 <html>
+    <!-- <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a> this was to keep white the button corresponding to the page, but with php for now better not using it -->
+ 
+
+ 
 <title>Teodori Luca</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +13,10 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 </style>
-<body>
+<body> 
+ 
+ 
+ 
  <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card w3-left-align w3-large">
@@ -19,6 +26,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a href="il_teodori.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Il Teodori</a>
     <a href="https://lucateo.blogspot.it/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Blog</a>
     <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-white">Contact</a>
+    <a href="research.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Research</a>
+    <a href="teaching.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Teaching</a>
+    
   </div>
  <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
@@ -26,16 +36,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About</a>
     <a href="il_teodori.html" class="w3-bar-item w3-button w3-padding-large">Il Teodori</a>
     <a href="https://lucateo.blogspot.it/" class="w3-bar-item w3-button w3-padding-large">Blog</a>
-    <a href="contact.html" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">Contact</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+    <a href="research.html" class="w3-bar-item w3-button w3-padding-large">Research</a>
+    <a href="teaching.html" class="w3-bar-item w3-button w3-padding-large">Teaching</a>
+    
   </div>
 </div>
 <!-- Header -->
-<header class="w3-container w3-blue-gray w3-center" style="padding:128px 16px" >
-  <h1 class="w3-margin w3-jumbo">Teodori Luca</h1>
+<header class="w3-container w3-black w3-center" style="background-image:url('images/bigbang.jpg');
+					background-repeat: no-repeat; background-position: center; padding:128px 16px" >
+					
+  <h1 class="w3-margin w3-jumbo">Teodori Luca</h1>  
   <p class="w3-xlarge">A physicist student webpage</p>
  </header>
-
-<!-- start of the particular things of the page -->
+ <!-- start of the particular things of the page -->
 
 
 			<div class="w3-row-padding w3-padding-64 w3-container">
@@ -50,7 +64,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 			
 <!-- end of the particular things of the page -->
-<aside>  <!-- the aside menu, layout taken from robe mie on css style -->
+
+   <aside>  <!-- the aside menu, layout taken from robe mie on css style -->
 <section>
 <h2>Links</h2>
 					<a href="files/tutorato.pdf">Notes on linear algebra</a>
@@ -65,6 +80,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   </div>
 </div>
 
+
+   <!-- Cit -->
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
     <h1 class="w3-margin w3-xlarge">"There are naive questions, tedious questions, ill-phrased questions, 
     questions put after inadequate self-criticism. But every question is a cry to understand the world. 
@@ -72,9 +89,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-<?php include 'menu.php';?>
-</div>
-<!-- Footer -->
+
+</div>   
+   
+   <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
    <p>Luca Teodori<br /> <!-- line break -->
 		Urbino, Italy <br />
@@ -93,6 +111,7 @@ function myFunction() {
     }
 }
 </script>
+
 
 </body>
 </html>
